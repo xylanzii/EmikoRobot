@@ -83,27 +83,27 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ Saya adalah vylan robot manager [✨](https://telegra.ph/vvylan-03-28)
-────────────────────────
+✪ Saya adalah vylan robot manager [✨] (https://telegra.ph/Vylan-Robot-04-04)
+────────────────────────·····
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+────────────────────────·····
+✪ Ketik /help Untuk melihat menu perintah.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Vylan Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="Tentang Vylan Robot", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Dapatkan Bantuan", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Channel Owner", url=f"t.me/Vylanesu"),
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Vylan To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="➗ Masukan Vylan Ke Grup anda ➗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -441,8 +441,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/Vylanesu"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/lanzisupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -456,29 +456,12 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_credit":
         query.message.edit_text(
             text=f"๏ Credis for Emiko\n"
-            "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
+            "\nHere Developers Making And Give Inspiration For Made The VylanRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
+                    InlineKeyboardButton(text="sena-ex", url="https://github.com/xylanzii"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
