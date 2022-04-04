@@ -86,7 +86,7 @@ PM_START_TEXT = """
 ✪ Saya adalah vylan robot manager [✨] (https://telegra.ph/Vylan-Robot-04-04)
 ────────────────────────·····
 × *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+× `{}` *Pengguna, across* `{}` *Chats.*
 ────────────────────────·····
 ✪ Ketik /help Untuk melihat menu perintah.
 """
@@ -360,7 +360,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Vylan*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -382,7 +382,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/xylanzii/emikorobot"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -461,8 +461,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/xylanzii"),
-                 ],
+                    InlineKeyboardButton(text="VylanRobot", url="https://github.com/xylanzii"),
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
                  ]
