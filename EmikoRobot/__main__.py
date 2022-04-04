@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ Saya adalah vylan robot manager [✨] (https://telegra.ph/Vylan-Robot-04-04)
+✪ Im Vylan Robot Manage + Music [✨] (https://telegra.ph/Vylan-Robot-04-04)
 ────────────────────────·····
 × *Uptime:* `{}`
 × `{}` *Pengguna, across* `{}` *Chats.*
@@ -99,11 +99,10 @@ buttons = [
         InlineKeyboardButton(text="Dapatkan Bantuan", callback_data="help_back"),
         InlineKeyboardButton(
             text="Channel Owner", url=f"t.me/Vylanesu"),
-        ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Masukan Vylan Ke Grup anda ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="⚗ Masukan Vylan Ke Grup anda ⚗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -780,7 +779,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "👋 Hi, Saya hidup.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
