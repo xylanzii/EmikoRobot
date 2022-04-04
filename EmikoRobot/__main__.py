@@ -461,7 +461,6 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="VylanRobot", url="https://github.com/xylanzii"),
-                 [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
                  ]
                 ]
