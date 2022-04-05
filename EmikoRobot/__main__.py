@@ -95,12 +95,12 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴠʏʟᴀɴ ʀᴏʙᴏᴛ📜", callback_data="emiko_"),
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ🤴🏻", url=f"t.me/pilannnn"),
+        InlineKeyboardButton(text="ᴠʏʟᴀɴ ʀᴏʙᴏᴛ", callback_data="emiko_"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"t.me/pilannnn"),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴀᴘᴀᴛᴋᴀɴ ʙᴀɴᴛᴜᴀɴ💡", callback_data="help_back"),
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ ᴏᴡɴᴇʀ🤟🏻", url=f"t.me/Vylanesu"),
+        InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"t.me/Vylanesu"),
     ],
     [
         InlineKeyboardButton(
