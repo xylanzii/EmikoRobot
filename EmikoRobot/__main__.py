@@ -83,28 +83,28 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
-✪ ɪᴍ ᴠʏʟᴀɴ ʀᴏʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ [✨] https://telegra.ph/Vylan-Robot-04-04. ||
-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
-× *ᴜᴘᴛɪᴍᴇ:* `{}`                                                          ||
-× `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*                                    ||
-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
-✪ ᴋᴇᴛɪᴋ /ʜᴇʟᴘ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴇɴᴜ ᴘᴇʀɪɴᴛᴀʜ .                                  ||
-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
+
+🤖 ɪᴍ ᴠʏʟᴀɴ ʀᴏʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ [✨] https://telegra.ph/Vylan-Robot-04-04. 
+-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦
+× *ᴜᴘᴛɪᴍᴇ:* `{}`                                       
+× `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
+-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦-♦
+⌨ ᴋᴇᴛɪᴋ /ʜᴇʟᴘ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴇɴᴜ ᴘᴇʀɪɴᴛᴀʜ
+
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="📜ᴛᴇɴᴛᴀɴɢ ᴠʏʟᴀɴ ʀᴏʙᴏᴛ📜", callback_data="emiko_"),
-        InlineKeyboardButton(text="🤴🏻ᴏᴡɴᴇʀ🤴🏻", url=f"t.me/pilannnn"),
+        InlineKeyboardButton(text="ᴠʏʟᴀɴ ʀᴏʙᴏᴛ📜", callback_data="emiko_"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ🤴🏻", url=f"t.me/pilannnn"),
     ],
     [
-        InlineKeyboardButton(text="💡ᴅᴀᴘᴀᴛᴋᴀɴ ʙᴀɴᴛᴜᴀɴ💡", callback_data="help_back"),
-        InlineKeyboardButton(text="🤟🏻ᴄʜᴀɴɴᴇʟ ᴏᴡɴᴇʀ🤟🏻", url=f"t.me/Vylanesu"),
+        InlineKeyboardButton(text="ᴅᴀᴘᴀᴛᴋᴀɴ ʙᴀɴᴛᴜᴀɴ💡", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ ᴏᴡɴᴇʀ🤟🏻", url=f"t.me/Vylanesu"),
     ],
     [
         InlineKeyboardButton(
-            text="⚗Masukan Vylan Ke Grup anda⚗", url=f"t.me/{bu}?startgroup=new"),
+            text="⚗ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴜᴘ ᴀɴᴅᴀ⚗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
@@ -425,10 +425,10 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_notes":
         query.message.edit_text(
-            text=f"<b>๏ Setting up notes</b>"
-            f"\nYou can save message/media/audio or anything as notes"
-            f"\nto get a note simply use # at the beginning of a word"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            text=f"<b>๏ Menyiapkan catatan</b>"
+            f"\nAnda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
+            f"\untuk mendapatkan catatan cukup gunakan # di awal kata"
+            f"\n\Anda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
