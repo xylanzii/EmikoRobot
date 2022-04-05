@@ -83,36 +83,38 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ Im Vylan Robot Manage + Music [✨] (https://telegra.ph/Vylan-Robot-04-04)
-────────────────────────·····
-× *Uptime:* `{}`
-× `{}` *Pengguna, across* `{}` *Chats.*
-────────────────────────·····
-✪ Ketik /help Untuk melihat menu perintah.
+∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
+✪ ɪᴍ ᴠʏʟᴀɴ ʀᴏʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ [✨] https://telegra.ph/Vylan-Robot-04-04. ||
+∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
+× *ᴜᴘᴛɪᴍᴇ:* `{}`                                                          ||
+× `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*                                    ||
+∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
+✪ ᴋᴇᴛɪᴋ /ʜᴇʟᴘ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴍᴇɴᴜ ᴘᴇʀɪɴᴛᴀʜ .                                  ||
+∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅-∅
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="Tentang Vylan Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="📜ᴛᴇɴᴛᴀɴɢ ᴠʏʟᴀɴ ʀᴏʙᴏᴛ📜", callback_data="emiko_"),
+        InlineKeyboardButton(text="🤴🏻ᴏᴡɴᴇʀ🤴🏻", url=f"t.me/pilannnn"),
     ],
     [
-        InlineKeyboardButton(text="Dapatkan Bantuan", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="Channel Owner", url=f"t.me/Vylanesu"),
+        InlineKeyboardButton(text="💡ᴅᴀᴘᴀᴛᴋᴀɴ ʙᴀɴᴛᴜᴀɴ💡", callback_data="help_back"),
+        InlineKeyboardButton(text="🤟🏻ᴄʜᴀɴɴᴇʟ ᴏᴡɴᴇʀ🤟🏻", url=f"t.me/Vylanesu"),
     ],
     [
         InlineKeyboardButton(
-            text="⚗ Masukan Vylan Ke Grup anda ⚗", url=f"t.me/{bu}?startgroup=new"),
+            text="⚗Masukan Vylan Ke Grup anda⚗", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+Klik tombol di bawah untuk mendapatkan deskripsi tentang perintah spesifik."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+ You can support the project by contacting @pilannnn  \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -228,7 +230,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet  .",
+            f"👋 Hi, Jancok{dispatcher.bot.first_name}. Nice to meet  .",
             parse_mode=ParseMode.HTML
        )
 
@@ -359,15 +361,15 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Vylan*, a powerful group management bot built to help you manage your group easily."
-            "\n• I can restrict users."
-            "\n• I can greet users with customizable welcome messages and even set a group's rules."
-            "\n• I have an advanced anti-flood system."
-            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
-            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
-            "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Emiko's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for EmikoRobot.",
+            text="๏ I'm *Vylan*, bot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
+            "\n• Saya dapat membatasi pengguna.."
+            "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
+            "\n• Saya memiliki sistem anti-fload yang canggih.."
+            "\n• Saya dapat memperingatkan pengguna sampai mereka mencapai peringatan maksimal, dengan setiap tindakan yang telah ditentukan sebelumnya seperti larangan, bisu, tendangan, dll."
+            "\n• Saya memiliki sistem pencatatan, daftar hitam, dan bahkan balasan yang telah ditentukan sebelumnya pada kata kunci tertentu."
+            "\n• Saya memeriksa izin admin sebelum menjalankan perintah apa pun dan hal lainnya"
+            "\n\n_Lisensi Vylan di bawah GNU General Public License v3.0_"
+            "\n\n Klik tombol di bawah untuk mendapatkan bantuan dasar untuk Vylan-Robot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -406,14 +408,14 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, EmikoRobot now ready to manage your group."
-            "\n\n*Admin Tools*"
-            "\nBasic Admin tools help you to protect and powerup your group."
-            "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
-            "\n\n*Greetings*"
-            "\nLets set a welcome message to welcome new users coming to your group."
-            "\nsend `/setwelcome [message]` to set a welcome message!",
+            text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang."
+            "\nSelamat, Vylan-Robot sekarang siap untuk mengelola grup Anda."
+            "\n\n*Alat Admin*"
+            "\Alat Admin dasar membantu Anda melindungi dan memperkuat grup Anda."
+            "\nAnda dapat melarang anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
+            "\n\n*Salam*"
+            "\Mari atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
+            "\nKetik `/setwelcome [message]` untuk mengatur pesan selamat datang!!",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -434,8 +436,8 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
+            text="*๏ Vylan support chats*"
+            "\nJoin Support Group Saya/Channel Saya untuk melihat atau melaporkan masalah di Vylan.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -454,8 +456,8 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Emiko\n"
-            "\nHere Developers Making And Give Inspiration For Made The VylanRobot",
+            text=f"๏ Credis Untuk Vylan\n"
+            "\Disini Developer Membuat Dan Memberikan Inspirasi Untuk Membuat Vylan-Robot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
