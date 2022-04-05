@@ -427,8 +427,8 @@ def emiko_about_callback(update, context):
         query.message.edit_text(
             text=f"<b>๏ Menyiapkan catatan</b>"
             f"\nAnda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
-            f"\untuk mendapatkan catatan cukup gunakan # di awal kata"
-            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            f"\nuntuk mendapatkan catatan cukup gunakan # di awal kata"
+            f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
