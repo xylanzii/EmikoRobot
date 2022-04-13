@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, Jancok{dispatcher.bot.first_name}. Nice to meet  .",
+            f"👋 Hi, Jancok {dispatcher.bot.first_name}.Anda tau kontol?  .",
             parse_mode=ParseMode.HTML
        )
 
@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="Admins", callback_data="emiko_admins"),
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
                  ],
                  [
@@ -383,7 +383,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/xylanzii/emikorobot"),
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/xylanzii"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
