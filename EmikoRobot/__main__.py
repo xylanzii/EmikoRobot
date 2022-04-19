@@ -406,7 +406,7 @@ def emiko_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "emiko_admin":
+    elif query.data == "emiko_admins":
         query.message.edit_text(
             text=f"*๏ Ayo buat grup Anda sedikit efektif sekarang."
             "\nSelamat, Vylan-Robot sekarang siap untuk mengelola grup Anda."
